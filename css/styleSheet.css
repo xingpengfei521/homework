@@ -1,0 +1,36 @@
+*{margin: 0;padding: 0;}
+body{padding: 70px 0 0 0;background: #edf0f1;}
+.noFill{fill:none;}
+header{width: 100%;height: 70px;position: fixed;top: 0;left: 0;padding: 12px;background: #27b99a;box-shadow:0px 2px 4px rgba(44,62,80,0.75);border-bottom-left-radius: 10px;z-index: 5;border-bottom-right-radius: 10px;}
+header input{width: 100%;height:46px;background: #66c4ab;color: #fff;text-indent: 18px;border-bottom-left-radius:8px;border-top-left-radius: 8px;border-top-right-radius: 23px;border-bottom-right-radius: 23px;border:0;box-shadow:none;outline:none;-webkit-appearance: none;position: relative;font-size: 15px;}
+header input::-webkit-input-placeholder{color:rgba(255,255,255,0.75);font-weight: 400;font-size: 15px;}
+header button{width: 46px;height:46px;border-radius: 50%;position: absolute;top:12px;right:12px;box-shadow: none;outline: none;background: white;cursor:pointer;-webkit-appearance: none;border:none;z-index: 2;}
+header button svg{width:16px;height:16px;position: absolute;left:50%;top:50%;z-index: 2;margin: -8px 0 0 -8px;border: none;outline: none;}
+header button svg .fill{fill:#27b99a;}
+div.content{width:100%;padding: 14px 14px 0 14px;}
+div.content ul.todo{width:100%;}
+div.content ul.todo li{width:100%;min-height: 50px;background: #fff;font-size: 15px;line-height: 22px;border-radius: 5px;box-shadow: 0 1px 2px rgba(44,62,80,0.1);padding:  14px 0 0 14px;color:gray;margin:0 0 10px 0;position: relative;}
+div.content ul.todo li:last-of-type{margin:0;}
+div.content ul.todo li .buttons{width: 100px;height: 50px;position: absolute;right:0;top:0;}
+div.content ul.todo li .buttons button{width: 50px;height:50px;background: none;float: left;box-shadow: none;outline: none;cursor:pointer;border:none;-webkit-appearance: none;position: relative;}
+div.content ul.todo li .buttons button:last-of-type:before{content:'';width:1px;height: 30px;background: #ccc;position: absolute;top:10px;left:0;}
+div.content ul.todo li .buttons button svg{width:22px;height:22px;position: absolute;top:50%;left:50%;margin:-11px 0 0 -11px;}
+div.content ul.todo li .buttons button.remove svg .fill{fill:#c8d4d0;}
+div.content ul.todo li .buttons button.remove:hover svg .fill{fill:#ed7675;transition: 0.5s ease;}
+div.content ul.todo li .buttons button.NOdone svg{border-radius: 11px;border:1px solid #27b99a;fill:#27b99a;}
+div.content ul.todo li .buttons button.NOdone:hover svg .fill{fill:#fff;}
+div.content ul.todo li .buttons button.NOdone:hover svg{background:#27b99a;transition:background 1.0s ease;}
+/*设置对号*/
+div.content ul.todo li .buttons button.NOdone svg{border-radius: 11px;border:1px solid #27b99a;transition: background 0.2s ease;}
+div.content ul.todo li .buttons button.NOdone svg .fill{fill:#27b99a;}
+/*判断如果不是完成列表的话,需要设置li的背景颜色.*/
+div.content ul.todo:not(#done) li .buttons button.NOdone:hover svg{background: #27b99a;}
+/*如果不是完成列表的话,需要设置li的对号颜色为白色*/
+div.content ul.todo:not(#done) li .buttons button.NOdone:hover svg .fill{fill:#fff;}
+/*如果是完成列表的话,就让他的样式是hover的效果.*/
+div.content ul.todo#done li .buttons button.NOdone svg{background: #27b99a;border: 0;}
+div.content ul.todo#done li .buttons button.NOdone svg .fill{fill:#fff;}
+/*准备完成与未完成之间的间距*/
+div.content ul.todo#done:not(:empty){padding: 50px 0 0 0;position: relative;}
+/*在完成与未完成之间添加提条横线*/
+div.content ul.todo#done li:first-of-type:not(:empty):before{content:'';width:136px;height: 1px;background: #ccc;position: absolute;top:-25px;left:50%;margin: 0 0 0 -68px;}
