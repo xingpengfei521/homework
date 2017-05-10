@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    padding-top: 1.525rem;
+}
+div.header{
+    height: 1.525rem;
+    background: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.5rem 0.525rem 0.375rem 0.575rem;
+}
+img{
+    border: none;
+    vertical-align: top;
+}
+div.header .img1{
+    float: left;
+    width:1.55rem;
+    height: 1.15rem;
+}
+div.header .img2{
+    width:6.525rem;
+    height: 1.525rem;
+    position: absolute;
+    left:50%;
+    margin-left: -3.2625rem;
+
+}
+div.header .img3{
+    float: right;
+    width: 1.125rem;
+    height:1.125rem;
+
+}
+div.bg{
+    width: 100%;
+    height:7.1rem;
+}
+div.bg img{
+    width: 100%;
+    height: 100%;
+}
+h2.h2_1{
+    text-align: center;
+    padding: 1.375rem 0 1.975rem 0;
+}
+ul.container{
+    padding:0 0.081% 0 0.081%;
+    overflow: hidden;
+}
+ul.container li{
+    float: left;
+    width: 33.19%;
+    text-align: center;
+    padding: 0 0.067% 0 0.067%;
+}
+ul.container li:first-of-type{
+    padding-left:0;
+}
+ul.container li:last-of-type{
+    padding-right:0;
+}
+div.container1{
+    text-align: center;
+    padding-top: 1.6rem;
+}
+div.container1 p{
+    width: 78.4%;
+    height: 2.325rem;
+    margin: 0 auto;
+    line-height: 2.325rem;
+    border: 1px solid red;
+    border-radius: 0.4rem;
+    color: red;
+}
+h2.h2_2{
+    text-align: center;
+    padding: 2.85rem 0 1.15rem 0;
+}
+ul.container2{
+    width: 100%;
+    padding:0 0.5rem 0 0.5rem;
+    height: 14rem;;
+}
+ul.container2 li{
+    width:100%;
+
+}
+ul.container2 li div.degree{
+    float: left;
+
+    text-align: center;
+    background: rgb(20,30,62);
+    color: white;
+    font-weight: 700;
+}
+ul.container2 li div.degree span{
+    display: inline-block;
+    width: 0.775rem;
+    height: 3.275rem;
+    font-size: 50px;
+    padding: 1.15rem 1.1rem 3.45rem 0.7rem;
+}
+ul.container2 li div.undergraduate{
+    float: left;
+    width:79%;
+    background: gray;
+    font-size: 1.5rem;
+    padding: 1.15rem 0 3.3rem 1.1rem;
+
+}
+ul.container2 li.mages{
+    padding-top:0.35rem;
+}
+ul.container2 li div.undergraduate span{
+    font-size: 1.2rem;
+}
+div.container3{
+    text-align: center;
+    padding-top:1.8rem;
+}
+div.container3 p{
+    width: 78.4%;
+    height: 2.325rem;
+    margin: 0 auto;
+    line-height: 2.325rem;
+    border: 1px solid red;
+    border-radius: 0.4rem;
+    color: red;
+}
